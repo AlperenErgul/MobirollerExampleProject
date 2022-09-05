@@ -1,0 +1,16 @@
+
+
+.navbar{
+  background-color: rgba(140, 29, 255, 0.9);
+}
+
+.navbar-brand{
+  font-family: Oswald, "sans-serif";
+  font-size: 40px;
+}
+
+button{
+  border: none;
+  background-color: rgba(140, 29, 255, 0.1);
+  color: white;
+}

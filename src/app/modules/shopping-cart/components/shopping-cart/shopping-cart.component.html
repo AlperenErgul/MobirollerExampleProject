@@ -1,0 +1,56 @@
+<section class="all" *ngIf="products.length>0">
+
+  <section class="shopping-card mt-3" >
+    <div class="container">
+
+      <div class="row">
+        <p class="header mt-3">Shopping Cart</p>
+        <div class="line"></div>
+      </div>
+
+      <div class="row">
+        <ul class="p-0">
+
+          <!--Cards-->
+          <li class="p-3" *ngFor="let product of products; let i = index">
+            <div class="row">
+              <div class="col-4">
+                <img src="{{product.image}}" alt="">
+              </div>
+              <div class="col-7">
+                <p class="card-text">{{product.title}}</p>
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <button (click)="subtractNumber(i)"><i class="fa-solid fa-minus me-2"></i></button>
+                    <p class="m-0">{{product.piece}}</p>
+                    <button (click)="addNumber(i)"><i class="fa-solid fa-plus ms-2"></i></button>
+                  </div>
+                  <div class="col-6 d-flex align-items-center">
+                    <p class="price m-0">${{product.price * product.piece}}</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-1">
+                <button (click)="deleteProduct(i)"><i class="fa-regular fa-circle-xmark"></i></button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section class="total-price mt-4 ms-3">
+    <div class="d-flex container">
+      <p>Total Price:</p>
+      <p class="ms-auto me-4">${{totalPrice}}</p>
+    </div>
+  </section>
+
+
+</section>

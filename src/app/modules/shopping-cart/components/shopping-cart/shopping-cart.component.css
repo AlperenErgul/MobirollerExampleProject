@@ -1,0 +1,42 @@
+.shopping-card{
+  background-color: rgba(196, 192, 192, 0.25);
+  border-radius: 15px;
+}
+
+img{
+  max-width: 100px;
+}
+
+ul{
+  list-style: none;
+}
+
+.card-text {
+  font-family: Oswald, "sans-serif";
+}
+
+.header{
+  font-family: Oswald, "sans-serif";
+  font-size: 20px;
+}
+
+.line{
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+button{
+  border: none;
+}
+
+@media (max-width: 768px) {
+
+
+
+}
+
+p{
+  font-family: Oswald, "sans-serif";
+}
+

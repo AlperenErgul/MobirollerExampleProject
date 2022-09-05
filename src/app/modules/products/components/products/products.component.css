@@ -1,0 +1,42 @@
+.btn{
+  background-color: #615d5d;
+  border: none;
+
+}
+
+.card-text{
+font-family: Oswald, "sans-serif";
+}
+
+.line{
+  height: 100vh;
+  width: 1px;
+  background-color: black;
+}
+
+.image-wrapper{
+  height: 280px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+
+}
+
+.card{
+  height: 100%;
+}
+
+.btn{
+  background-color: rgba(140, 29, 255, 0.9);
+}
+
+
+
+
+
+
